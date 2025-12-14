@@ -1,0 +1,36 @@
+{% extends "overall/base.twig" %}
+
+{% block base %}
+
+    <p>Home blocks</p>
+
+    {% set blocks = [
+        {'name': 'hero',
+            'fields': {
+            'title': '<h1 class="mce_large-content">South Carolina, <span class="mce_text-red mce_text-underline"> Find it all here!</span></p>',
+            'description': '<p><a href="#">Find out more</a> about Local Grid</span></p>',
+            'style': 'margin: 0 0 22px 0;  @media (max-width:960px){margin: 0 0 50px 0}',
+            'class': 'home',
+            'breadCrumb': false,
+            'bgLayers': [
+                {'image': svg_folder ~ "home-hero-ground.svg", 'name': 'ground'},
+                {'image': svg_folder ~ "home-hero-trees.svg", 'name': 'trees'},
+                {'image': svg_folder ~ "home-hero-text.svg", 'name': 'house'},
+                {'image': svg_folder ~ "home-hero-arrow.svg", 'name': 'arrow'},
+            ],
+            'id': "home-hero",
+            },
+        }
+    ] %}
+
+    {% for block in blocks %}
+        {% include 'blocks/main/' ~ block.name ~ '.twig' with
+            {
+                'block_group': 'main',
+                'block_name': block.name,
+                'fields': block.fields,
+            }
+        %}
+    {% endfor %}
+
+{% endblock %}
