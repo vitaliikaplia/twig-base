@@ -16,7 +16,7 @@
         {% if fields.buttons is defined and fields.buttons %}
         <div class="hero-actions">
             {% for button in fields.buttons %}
-            <a href="{{ button.url|default('#') }}" class="btn {{ button.style|default('primary') }}">
+            <a href="{{ button.url|default('#') }}" class="btn {{ button.style|default('primary') }}"{% if button.target is defined and button.target %} target="{{ button.target }}"{% endif %}>
                 {{ button.text }}
             </a>
             {% endfor %}
