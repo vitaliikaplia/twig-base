@@ -1,5 +1,14 @@
-<div id="{{ rand_id() }}" class="customBlockWrapper {{ block_group }}-{{ block_name }} desktop_tablet mobile">
+{% set block_id = block.name ~ rand_id() %}
+
+<div id="{{ block_id }}" class="customBlockWrapper {{ block_group }}-{{ block_name }}{% if fields is defined and fields and fields.modifier is defined and fields.modifier %} {{ fields.modifier }}{% endif %} desktop_tablet mobile">
+    {% if fields.style|default('') is not empty %}
+    <style>
+        #{{ block_id }}{
+            {{ fields.style }}
+        }
+    </style>
+    {% endif %}
     <div class="customBlock">
-    {% block block %}{% endblock %}
+        {% block block %}{% endblock %}
     </div>
 </div>

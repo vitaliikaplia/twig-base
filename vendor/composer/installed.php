@@ -1,7 +1,7 @@
 <?php return array(
     'root' => array(
-        'name' => 'vitaliikaplia/starter-twig',
-        'pretty_version' => '1.0.0+no-version-set',
+        'name' => 'vitaliikaplia/twig-base',
+        'pretty_version' => '1.0.0',
         'version' => '1.0.0.0',
         'reference' => null,
         'type' => 'application',
@@ -38,16 +38,16 @@
             'dev_requirement' => false,
         ),
         'twig/twig' => array(
-            'pretty_version' => 'v3.22.1',
-            'version' => '3.22.1.0',
-            'reference' => '1de2ec1fc43ab58a4b7e80b214b96bfc895750f3',
+            'pretty_version' => 'v3.23.0',
+            'version' => '3.23.0.0',
+            'reference' => 'a64dc5d2cc7d6cafb9347f6cd802d0d06d0351c9',
             'type' => 'library',
             'install_path' => __DIR__ . '/../twig/twig',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'vitaliikaplia/starter-twig' => array(
-            'pretty_version' => '1.0.0+no-version-set',
+        'vitaliikaplia/twig-base' => array(
+            'pretty_version' => '1.0.0',
             'version' => '1.0.0.0',
             'reference' => null,
             'type' => 'application',

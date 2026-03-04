@@ -1,6 +1,7 @@
 {
-    "name": "vitaliikaplia/starter-twig",
-    "description": "",
+    "name": "vitaliikaplia/twig-base",
+    "description": "PHP twig-base template for WordPress/Gutenberg style HTML markup",
+    "version": "1.0.0",
     "type": "application",
     "license": "none",
     "autoload": {},

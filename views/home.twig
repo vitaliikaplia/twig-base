@@ -2,25 +2,33 @@
 
 {% block base %}
 
-    <p>Home blocks</p>
-
     {% set blocks = [
-        {'name': 'hero',
+        {
+            'name': 'hero',
             'fields': {
-            'title': '<h1 class="mce_large-content">South Carolina, <span class="mce_text-red mce_text-underline"> Find it all here!</span></p>',
-            'description': '<p><a href="#">Find out more</a> about Local Grid</span></p>',
-            'style': 'margin: 0 0 22px 0;  @media (max-width:960px){margin: 0 0 50px 0}',
-            'class': 'home',
-            'breadCrumb': false,
-            'bgLayers': [
-                {'image': svg_folder ~ "home-hero-ground.svg", 'name': 'ground'},
-                {'image': svg_folder ~ "home-hero-trees.svg", 'name': 'trees'},
-                {'image': svg_folder ~ "home-hero-text.svg", 'name': 'house'},
-                {'image': svg_folder ~ "home-hero-arrow.svg", 'name': 'arrow'},
-            ],
-            'id': "home-hero",
-            },
-        }
+                'subtitle': 'Welcome',
+                'title': 'Clean twig-base for Your Next Project',
+                'description': 'A minimal PHP/Twig engine for building static markup that migrates seamlessly to WordPress.',
+                'buttons': [
+                    {'text': 'Get Started', 'url': '#', 'style': 'primary'},
+                    {'text': 'Learn More', 'url': '#', 'style': 'secondary'}
+                ]
+            }
+        },
+        {
+            'name': 'text',
+            'fields': {
+                'title': 'About the Project',
+                'content': '<p>This is a text block example. It uses the <strong>.typo</strong> class for rich text formatting — headings, lists, links, blockquotes, and tables are all styled automatically.</p><p>Use this block for any content sections that require formatted text output.</p>'
+            }
+        },
+        {
+            'name': 'form',
+            'fields': {
+                'title': 'Contact Us',
+                'description': 'Have a question or want to work together? Fill out the form below.'
+            }
+        },
     ] %}
 
     {% for block in blocks %}

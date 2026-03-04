@@ -2,6 +2,27 @@
 
 {% block block %}
 
-<p>{{ block.name }}</p>
+<div class="hero-section">
+    <div class="hero-inner">
+        {% if fields.subtitle is defined and fields.subtitle %}
+        <span class="hero-subtitle">{{ fields.subtitle }}</span>
+        {% endif %}
+        {% if fields.title is defined and fields.title %}
+        <h1 class="hero-title">{{ fields.title }}</h1>
+        {% endif %}
+        {% if fields.description is defined and fields.description %}
+        <p class="hero-description">{{ fields.description }}</p>
+        {% endif %}
+        {% if fields.buttons is defined and fields.buttons %}
+        <div class="hero-actions">
+            {% for button in fields.buttons %}
+            <a href="{{ button.url|default('#') }}" class="btn {{ button.style|default('primary') }}">
+                {{ button.text }}
+            </a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</div>
 
 {% endblock %}

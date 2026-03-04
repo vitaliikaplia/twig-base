@@ -20,12 +20,18 @@ function router($url_segments = []){
             $context['page']['title'] = ucfirst($url_segments[0]);
             $template = $url_segments[0] . '.twig';
 
-            if($url_segments[0] == 'password-protected'){
-                $body_classes[] = 'password-protected';
+        } elseif(in_array($url_segments[0], get_allowed_others_templates())) {
+            $context['page']['title'] = ucfirst(str_replace('-', ' ', $url_segments[0]));
+            $template = 'others/' . $url_segments[0] . '.twig';
+
+            if($url_segments[0] == '404'){
+                header("HTTP/1.1 404 Not Found");
+                $body_classes[] = 'error404';
+                $context['page']['title'] = 'Error 404';
             }
 
-            if($url_segments[0] == 'coming-soon'){
-                $body_classes[] = 'header-disabled';
+            if($url_segments[0] == 'password-protected'){
+                $body_classes[] = 'password-protected';
             }
 
         } else {

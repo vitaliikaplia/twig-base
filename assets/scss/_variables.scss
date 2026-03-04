@@ -1,56 +1,43 @@
 /* variables!
 -------------------------------------------------------------- */
 
-//:root{
+:root{
 
   // colors
-//  --color-white: #fff;
-//  --color-white-rgb: 255, 255, 255;
-//  --color-black: #0D0907;
-//  --color-black-rgb: 13, 9, 7;
-//  --color-secondary-black: #191825;
-//  --color-secondary-black-rgb: 25, 24, 37;
-//  --color-red: #F53838;
-//  --color-red-rgb: 245, 56, 56;
-//  --color-green: #8AC55D;
-//  --color-green-rgb: 138, 197, 93;
-//  --color-blue: #3CC8FF;
-//  --color-blue-rgb: 60, 200, 255;
-//  --color-grey: #4f5665;
-//  --color-grey-rgb: 79, 86, 101;
-//  --color-light-grey: #8c909b;
-//  --color-light-grey-rgb: 140, 144, 155;
-//
-//  --color-decor-grey: #B2B6BF;
-//  --color-decor-grey-rgb: 178, 182, 191;
-//  --color-green-bg: #D2EDB0;
-//  --color-green-bg-rgb: 210, 237, 176;
-//  --color-green-text: #5E750D;
-//  --color-green-text-rgb: 94, 117, 13;
-//  --color-red-bg: #FFD3D3;
-//  --color-red-bg-rgb: 255, 255, 211;
-//  --color-red-text: #C31313;
-//  --color-red-text-rgb: 195, 19, 19;
-//  --color-blue-bg: #9EE4FF;
-//  --color-blue-bg-rgb: 158, 228, 255;
-//  --color-blue-text: #064963;
-//  --color-blue-text-rgb: 6, 73, 99;
-//  --color-blue-border: #173449;
-//  --color-blue-border-rgb: 23, 52, 73;
-//
-//  // sizes
-//  --main-font-size: 16px;
-//  --size-card-title: 22px;
-//
-//  // fonts
-//  --main-font-family: Inter;
-//  --secondary-font-family: Montseat;
-//
-////  paddings
-//  --body-top-padding: 102px;
-//  --main-horizontal-padding: 20px;
-////  width
-//  --main-block-width: 1249px;
-//  --secondary-block-width: 1085px;
-//  --third-block-width: 1035px;
-//}
+  --color-white: #fff;
+  --color-white-rgb: 255, 255, 255;
+  --color-black: #000;
+  --color-black-rgb: 0, 0, 0;
+  --color-dark: #1a1a2e;
+  --color-dark-rgb: 26, 26, 46;
+  --color-primary: #0f3460;
+  --color-primary-rgb: 15, 52, 96;
+  --color-accent: #e94560;
+  --color-accent-rgb: 233, 69, 96;
+  --color-grey: #6c757d;
+  --color-grey-rgb: 108, 117, 125;
+  --color-grey-light: #e9ecef;
+  --color-grey-light-rgb: 233, 236, 239;
+  --color-link: #0f3460;
+  --color-input-bg: #f8f9fa;
+  --color-input-border: #ced4da;
+  --color-placeholder: #70777E;
+  --color-success: #2d6a4f;
+  --color-error: #e63946;
+
+  // sizes
+  --main-font-size: 16px;
+
+  // layout
+  --block-side-padding: 40px;
+  --primary-block-width: 1200px;
+  --header-height: 72px;
+
+  // fonts
+  --main-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+  @media (max-width: 768px) {
+    --block-side-padding: 20px;
+    --header-height: 60px;
+  }
+}

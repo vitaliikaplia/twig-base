@@ -1,0 +1,1 @@
+.text-section{padding:80px var(--block-side-padding)}.text-section .text-inner{max-width:var(--primary-block-width);margin:0 auto}.text-section .text-title{font-size:32px;font-weight:700;color:var(--color-dark);margin-bottom:24px}@media (max-width:768px){.text-section .text-title{font-size:26px}}@media (max-width:768px){.text-section{padding:50px var(--block-side-padding)}}
