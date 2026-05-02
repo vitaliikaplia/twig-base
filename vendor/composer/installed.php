@@ -20,8 +20,8 @@
             'dev_requirement' => false,
         ),
         'symfony/polyfill-ctype' => array(
-            'pretty_version' => 'v1.36.0',
-            'version' => '1.36.0.0',
+            'pretty_version' => 'v1.37.0',
+            'version' => '1.37.0.0',
             'reference' => '141046a8f9477948ff284fa65be2095baafb94f2',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/polyfill-ctype',
@@ -29,8 +29,8 @@
             'dev_requirement' => false,
         ),
         'symfony/polyfill-mbstring' => array(
-            'pretty_version' => 'v1.36.0',
-            'version' => '1.36.0.0',
+            'pretty_version' => 'v1.37.0',
+            'version' => '1.37.0.0',
             'reference' => '6a21eb99c6973357967f6ce3708cd55a6bec6315',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/polyfill-mbstring',
